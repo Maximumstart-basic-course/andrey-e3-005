@@ -33,13 +33,5 @@ if (login === 'Admin') {
     }
   }
 } else {
-  switch (login) {
-    case null:
-    case '':
-    case escape:
-      alert('Такого логина нет в системе');
-      break;
-    default:
-      alert('Такого логина нет в системе');
-  }
+       alert('Такого логина нет в системе');
 }
