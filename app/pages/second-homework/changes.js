@@ -1,4 +1,4 @@
-// const col = prompt('Введите цвет');
+// const col = prompt('Введите цвет'); // Самостоятельная работа
 
 // if (col.toLowerCase() === 'красный') {
 // 	alert('#f0000');
@@ -10,21 +10,21 @@
 // 	alert('цвет не найден');
 // }
 
-const col = prompt('Введите цвет');
+// const col = prompt('Введите цвет'); // Самостоятельная работа
 
-switch (col) {
-  case 'красный':
-    alert('#f0000');
-    break;
-  case 'зеленый':
-    alert('#fy455');
-    break;
-  case 'синий':
-    alert('#f97666');
-    break;
-  default:
-    alert('Некорректный цвет');
-}
+// switch (col) {
+//   case 'красный':
+//     alert('#f0000');
+//     break;
+//   case 'зеленый':
+//     alert('#fy455');
+//     break;
+//   case 'синий':
+//     alert('#f97666');
+//     break;
+//   default:
+//     alert('Некорректный цвет');
+// }
 
 
 let i = 0;
@@ -69,22 +69,25 @@ for (let k = 10; k >= 0; --k) {
 
 let k = 10;
 
-while (k >= 0) {
+while (k > 0) {
+   --k;
   if (k % 2 === 0) {
     console.log(k);
   }
-  --k;
+  
+  }
+
+const isAdmin = true;
+
+if (isAdmin) {
+	alert('Привет, Admin!');
+} else {
+	alert('Ты точно не Admin');
 }
 
-// const isAdmin = true;
+const isAdmin = true;
 
-// if (isAdmin) {
-// 	alert('Привет, Admin!');
-// } else {
-// 	alert('Ты точно не Admin');
-// }
-
-const isAdmin = true ? alert('Привет, Admin!') : alert('Ты точно не Admin');
+isAdmin === true ? alert('Привет, Admin!') : alert('Ты точно не Admin');
 
 // const age = +prompt('Сколько тебе лет?', '12');
 
