@@ -9,7 +9,6 @@ if (login === 'Admin') {
     switch (password) {
       case null:
       case '':
-      case escape:
         alert('Отказано в доступе');
         break;
       default:
@@ -25,7 +24,6 @@ if (login === 'Admin') {
     switch (pass) {
       case null:
       case '':
-      case escape:
         alert('Отказано в доступе');
         break;
       default:
@@ -33,5 +31,5 @@ if (login === 'Admin') {
     }
   }
 } else {
-       alert('Такого логина нет в системе');
+  alert('Такого логина нет в системе');
 }

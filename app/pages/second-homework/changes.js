@@ -77,13 +77,13 @@ while (k > 0) {
   
   }
 
-const isAdmin = true;
+// const isAdmin = true;
 
-if (isAdmin) {
-	alert('Привет, Admin!');
-} else {
-	alert('Ты точно не Admin');
-}
+// if (isAdmin) {
+// 	alert('Привет, Admin!');
+// } else {
+// 	alert('Ты точно не Admin');
+// }
 
 const isAdmin = true;
 
