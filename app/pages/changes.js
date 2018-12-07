@@ -1,13 +1,13 @@
 // const col = prompt('Введите цвет'); // Самостоятельная работа
 
 // if (col.toLowerCase() === 'красный') {
-// 	alert('#f0000');
+//  alert('#f0000');
 // } else if (col.toLowerCase() === 'белый') {
-// 	alert('#f62217');
+//  alert('#f62217');
 // } else if (col.toLowerCase() === 'черный') {
-// 	alert('#f93736');
+//  alert('#f93736');
 // } else {
-// 	alert('цвет не найден');
+//  alert('цвет не найден');
 // }
 
 // const col = prompt('Введите цвет'); // Самостоятельная работа
@@ -59,7 +59,7 @@ switch (year) {
 
 const number = +prompt('What is the number?', '0'); // Ввели 1
 
-console.log(`${number}10`); // 110
+console.log(number + 10); // 110
 
 for (let k = 10; k >= 0; --k) {
   if (k % 2 === 0) {
@@ -80,9 +80,9 @@ while (k > 0) {
 // const isAdmin = true;
 
 // if (isAdmin) {
-// 	alert('Привет, Admin!');
+//  alert('Привет, Admin!');
 // } else {
-// 	alert('Ты точно не Admin');
+//  alert('Ты точно не Admin');
 // }
 
 const isAdmin = true;
@@ -92,13 +92,13 @@ isAdmin === true ? alert('Привет, Admin!') : alert('Ты точно не A
 // const age = +prompt('Сколько тебе лет?', '12');
 
 // if (age === 12) {
-// 	alert('Слишком мало :(');
+//  alert('Слишком мало :(');
 // } else if (age === 16) {
-// 	alert('Почти достаточно :[');
+//  alert('Почти достаточно :[');
 // } else if (age === 18) {
-// 	alert('Вот сейчас в самый раз! :)');
+//  alert('Вот сейчас в самый раз! :)');
 // } else {
-// 	alert('Возраст не определен %)');
+//  alert('Возраст не определен %)');
 // }
 
 const age = +prompt('Сколько тебе лет?', '12');
