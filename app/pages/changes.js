@@ -70,12 +70,11 @@ for (let k = 10; k >= 0; --k) {
 let k = 10;
 
 while (k > 0) {
-   --k;
+  --k;
   if (k % 2 === 0) {
     console.log(k);
   }
-  
-  }
+}
 
 // const isAdmin = true;
 

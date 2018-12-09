@@ -1,4 +1,4 @@
-﻿# Базовый курс веб-разработки
+﻿# Базовый курс веб-разработки [![Build Status](https://travis-ci.com/Maximumstart-basic-course/andrey-e3-005.svg?branch=master)](https://travis-ci.com/Maximumstart-basic-course/andrey-e3-005)
 
 * Студент:  `Сафонов Андрей`.
 * План занятий: [нате](https://docs.google.com/document/d/1e6PG06nszODebSn5DsqBsG6AujbXoKmqj1drDsoQElM/edit?usp=sharing).
@@ -184,5 +184,5 @@ npm test или npm t
 Некоторые ошибки линтер предложит исправить автоматически. Для этого запусти команду:
 
 ```bash
-npm run all:fix
+npm run eslint:fix
 ```

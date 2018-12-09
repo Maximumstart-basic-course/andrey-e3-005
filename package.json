@@ -4,12 +4,8 @@
   "description": "essential-course",
   "main": "index.js",
   "scripts": {
-    "eslint:lint": "eslint ./app/**/*.js",
-    "stylelint:lint": "stylelint './app/**/*.css'",
-    "test": "npm run eslint:lint & npm run stylelint:lint",
-    "eslint:fix": "eslint ./app/**/*.js --fix",
-    "stylelint:fix": "stylelint './**/*.css' --fix",
-    "all:fix": "eslint:fix && stylelint:fix"
+    "test": "eslint ./app/**/*.js",
+    "eslint:fix": "eslint ./app/**/*.js --fix"
   },
   "keywords": [],
   "author": "Maximumstart",
