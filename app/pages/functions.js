@@ -4,8 +4,8 @@
 
 
 // // function person() {
-// // 	const name = 'John';
-// // 	const surname = 'Doe';
+// //   const name = 'John';
+// //   const surname = 'Doe';
 // // }
 
 // // console.log(`Hello, ${name} ${surname}!`);
@@ -17,10 +17,10 @@
 // }
 
 // // const addThree = (num) => {
-// // 	const number = 0;
-// // 	number = num;
+// //   const number = 0;
+// //   number = num;
 
-// // 	return +number + 3;
+// //   return +number + 3;
 // // }
 
 // const addThree = (num) => {
@@ -34,11 +34,11 @@
 // // second(); // 'Second one'
 
 // // const first = () => {
-// // 	console.log('First one');
+// //   console.log('First one');
 // // }
 
 // // function second() {
-// // 	console.log('Second one');
+// //   console.log('Second one');
 // // }
 
 
@@ -57,8 +57,8 @@
 // // const name = 'John';
 
 // // (() => {
-// // 	const surname = 'Doe';
-// // 	console.log(`${name} ${surname}`);
+// //   const surname = 'Doe';
+// //   console.log(`${name} ${surname}`);
 // // })();
 
 // // console.log(`${name} ${surname}`);
@@ -89,15 +89,17 @@ const add = (a, b) => {
     console.log('Введите 2 числа');
   } else if (isNaN(b)) {
     console.log('Введите 2 числа');
-  }	else {
+  } else {
     console.log(+a + +b);
   }
 };
 
+add(2, 5);
+
 // const length = (r) => {
 //   if (isNaN(r)) {
 //     console.log('Введите число');
-//   }	else {
+//   }  else {
 //     return (2 * Math.PI * +r);
 //   }
 // };
@@ -109,10 +111,12 @@ const discr = (a, b, c) => {
     console.log('Введите 3 числа');
   } else if (isNaN(c)) {
     console.log('Введите 3 числа');
-  }	else {
-    console.log(Math.pow(b, 2) - 4 * a * c);
+  } else {
+    console.log(b ** 2 - 4 * a * c);
   }
 };
+
+discr(2, 3, 5);
 
 // const square = (a) => {
 //   if (isNaN(a)) {

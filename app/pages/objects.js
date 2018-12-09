@@ -24,8 +24,8 @@
       if (isNaN(a)) {
         console.log('Введите 2 числа');
       } else if (isNaN(b)) {
-		 return ('Введите 2 числа');
-      }	else if (+a > +b) {
+        return ('Введите 2 числа');
+      } else if (+a > +b) {
         return (`${a} больше`);
       } else if (+a === +b) {
         return ('Числа равны');
@@ -36,9 +36,9 @@
     min(a, b) {
       if (isNaN(a)) {
         console.log('Введите 2 числа');
-  	} else	if (isNaN(b)) {
-		 return ('Введите 2 числа');
-      }	else if (+a < +b) {
+      } else if (isNaN(b)) {
+        return ('Введите 2 числа');
+      } else if (+a < +b) {
         return (`${a} меньше`);
       } else if (+a === +b) {
         return ('Числа равны');
@@ -50,44 +50,46 @@
       if (isNaN(a)) {
         console.log('Введите 2 числа');
       } else if (isNaN(b)) {
-		 return ('Введите 2 числа');
-      }	else {
+        return ('Введите 2 числа');
+      } else {
         return (+a + +b);
       }
     },
     diam(len) {
       if (isNaN(len)) {
         console.log('Введите число');
-      }	else {
+      } else {
         return (len / R2D2.PI);
       }
     },
     discr(a, b, c) {
       if (isNaN(a)) {
         console.log('Введите 3 числа');
- 	} else if (isNaN(b)) {
+      } else if (isNaN(b)) {
         console.log('Введите 3 числа');
-  	} else if (isNaN(c)) {
+      } else if (isNaN(c)) {
         console.log('Введите 3 числа');
-  	}	else {
+      } else {
         return (this.pow(b, 2) - 4 * a * c);
       }
     },
   };
 
   const user = {
- 	name: 'John',
- 	surname: 'Doe',
- 	phone: '+380971234567',
- 	email: 'john@example.com',
- 	id: '123efr24',
+    name: 'John',
+    surname: 'Doe',
+    phone: '+380971234567',
+    email: 'john@example.com',
+    id: '123efr24',
   };
 
   let counter = 0;
 
   for (const prop in user) {
-    counter++;
-    console.log(`Свойство ${prop} имеет значение ${user[prop]}`);
+    if (Object.prototype.hasOwnProperty.call(user, prop)) {
+      counter++;
+      console.log(`Свойство ${prop} имеет значение ${user[prop]}`);
+    }
   }
 
   console.log(`Всего разобрано ${counter} свойств объекта user`);
