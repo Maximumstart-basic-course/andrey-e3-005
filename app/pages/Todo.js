@@ -35,4 +35,4 @@ const user = [{name: 'Bruce', surname: 'Doe'}];
 
 console.log(user[0].name);
 
-user.push('age: 41');
+user[0].age = '41';

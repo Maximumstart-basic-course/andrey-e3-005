@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Answers</title>
+	<link rel="stylesheet" href="../seventh-homework/style.mini.css">
 </head>
 <body>
 	<div class="faq">
@@ -62,6 +63,128 @@
 			<p class="question">Какие преимущества дают обратные кавычки (`) при указании строки?</p>
 			<p class="answer">При использовании обратных кавычек сохраняется форматирование и можно использовать интерполяцию.</p>
 		</div>
+		<div class="pair loops">
+			<p class="question">Что такое "алгоритм"? Какие ты знаешь типы алгоритмов?</p>
+			<p class="answer">Набор инструкций, описывающих порядок действий для решения задачи. Линейные алгоритмы,
+с ветвлениями, с повторениями.</p>
+		</div>
+		<div class="pair loops">
+			<p class="question">Зачем нужны циклы? Какие виды циклов ты знаешь? В чем их основные отличия?</p>
+			<p class="answer">Для повторения различных действий много раз. While, Do...while, for. </p>
+		</div>
+		<div class="pair loops">
+			<p class="question">Что делают операторы ++i и i++ и в чем их отличие?</p>
+			<p class="answer">Прибавляют одну единицу, i++ начинает отсчет с заданной переменной</p>
+		</div>
+		<div class="pair loops">
+			<p class="question">Что такое "итерация"?</p>
+			<p class="answer">Повторное применение действия (цикл)</p>
+		</div>
+		<div class="pair loops">
+			<p class="question">Как называются и чем отличаются операторы || и &&?</p>
+			<p class="answer">|| оператор или (выполняется если одно из утверждений true), && оператор и (выполняется, если все утверждения true).</p>
+		</div>
+		<div class="pair loops">
+			<p class="question">Для чего используется break? Почему в конструкции switch нужно использовать break для каждого case?</p>
+			<p class="answer">Break завершает последовательность операторов. Если совпало значение, программа будет выполняться до ближайшего break, если его нет, то выполнятся все значения</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Что такое DOM?</p>
+			<p class="answer">Структурирование HTML докуминта в виде дерева объектов, которое можно изменять с помощью js</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Что такое узел (нода)? Какие существуют ноды?</p>
+			<p class="answer">Структурная еденица дерева объектов. Основные - теги, текстовые - текст в них.</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Какие есть способы поиска элементов на странице?</p>
+			<p class="answer">Существуют старые методы по классу, тегу или идентификатору (document.getElementById, document.getElementsByClassName, document.getElementsByTagName) и document.querySelectorAll и document.querySelector, которые возвращают NodeList, и элемент соответственно.</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Что возвращает метод document.getElementById()? А метод document.querySelectorAll()?</p>
+			<p class="answer">Метод document.getElementById() возвращает элемент, document.querySelectorAll() возвращает NodeList.</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Как изменить стили элемента? Какая существует особенность с правилам, в названии которых есть дефис (border-radius, padding-left)? Какая особенность есть со свойством float? Можно ли задать элементу сразу несколько CSS-свойств?</p>
+			<p class="answer">Стиль можно изменить с помощью метода элемент.style.свойство = ''. Правила с дефисами пишутся через camelCase. Пишется элемент.style.cssFloat = ''. Можно задать одновременно несколько css-свойств через элемент.style.cssText = ''.</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Чем отличается HTMLCollection / NodeList от массива?</p>
+			<p class="answer">В HTMLCollection нельзя использовать метод перебора forEach.</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Как обратиться к родителю элемента? А к потомку?</p>
+			<p class="answer">Node.parentElement ‒ родитель, Node.children, Node.clildNodes (с текстом), Node.firstChild, Node.lastChild</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Зачем нужны data-* атрибуты? И как получить доступ к значению такого атрибута?</p>
+			<p class="answer">Для хранения дополнительной информации, element.getAttribute('') или element.dataset.__</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Опиши, какие методы и свойства используются для работы с классами?</p>
+			<p class="answer">element.classList.add(), element.classList.remove(), element.classList.toggle(), element.classList.contains, element.classList.item(Number), element.classList.length</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Какие методы создают новый элемент, текстовую ноду? А какие удаляют?</p>
+			<p class="answer">document.createElement или document.createTextNode. element.innerHTML = ''; (узел куда добавляют).appendChild(элемент). узел.removeChild(элемент); элемент.remove(); </p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Как работает метод Element.matches()</p>
+			<p class="answer">Возвращает true or false если находи нужный, нужен при переборе.</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Зачем нужна библиотека Modernizr?</p>
+			<p class="answer">Для поддержки новых функций в различных браузерах старыми браузерами.</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Зачем нужна библиотека jQuery?</p>
+			<p class="answer">Многофункциональная библиотека, которая нужна для работы с документами HTML, обработки событий, анимации</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Чем отличаются Node.appendChild(), Node.insertBefore() и Element.insertAdjacentHTML()?</p>
+			<p class="answer">Это методы вставки элемента в структуру HTML, позволяют вставить элементы в разные места.</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Что находится в свойстве Element.innerHTML? А Element.outerHTML? Ответь, чем отличаются два следующих типа вставки:</p>
+			<p class="answer"></p>
+		</div>
+		<div class="pair events">
+			<p class="question">Что такое событие? Какие бывают события?</p>
+			<p class="answer">Сигнал от браузера о происшествии чего-либо. События мыши, клавиатуры, элементов управления, события документа</p>
+		</div>
+		<div class="pair events">
+			<p class="question">Как можно привязывать обработчики к событию? Какие есть недостатки у разных способов привязки к событиям?</p>
+			<p class="answer">1. С помощью HTML-атрибутов (недостаток: смешивание HTML и js). 2. Обращение к свойствам элемента(можно привязать только один обработчик). 3. addEventListener</p>
+		</div>
+		<div class="pair events">
+			<p class="question">Что такое "делегирование"? В чем преимущество использования делегирования?</p>
+			<p class="answer">Назначение общему предку элементов событий, которые нужно обрабатывать похожим образом. ускоряет работу системы.</p>
+		</div>
+		<div class="pair events">
+			<p class="question">Как удалить обработчик события?</p>
+			<p class="answer">removeEventListener('событие', функция колбэка).</p>
+		</div>
+		<div class="pair events">
+			<p class="question">Чему равен this в функции-обработчике события? Какая есть особенность у стрелочных функций и this?</p>
+			<p class="answer">this обращается к window.</p>
+		</div>
+		<div class="pair events">
+			<p class="question">Что такое "захват" и "всплытие". Какую роль они играют?</p>
+			<p class="answer"> "Захват" - после происшествия события информация спускается от корневого элемента к нужному. "Всплытие" - информация возвращается от нужного элемента к корневого. Во время этих действий запускаются события на пути между корневым и нужным элементом.</p>
+		</div>
+		<div class="pair events">
+			<p class="question">Что такое объект Event? Какую информацию он хранит?</p>
+			<p class="answer"> Координаты курсора, введённый символ и другие, в зависимости от события.</p>
+		</div>
+		<div class="pair events">
+			<p class="question">Как отменить событие по умолчанию?</p>
+			<p class="answer">С помощью preventDefault</p>
+		</div>
+		<div class="pair events">
+			<p class="question">Как остановить "всплытие" на каком-то элементе? Почему это нужно делать с осторожностью?</p>
+			<p class="answer">event.stopImmediatePropagation(). При этом ламается весь лагорифм построения события. + не вызываются соседние события.</p>
+		</div>
 	</div>
+	<script src="../seventh-homework/common.js"></script>
 </body>
 </html>
