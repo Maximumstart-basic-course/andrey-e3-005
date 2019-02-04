@@ -1,6 +1,6 @@
 const table = document.querySelector('.table-users');
-const th = document.querySelector('.tr-head');
-const errorDiv = document.querySelector('.error');
+// const th = document.querySelector('.tr-head');
+// const errorDiv = document.querySelector('.error');
 
 const URL_USERS = 'https://jsonplaceholder.typicode.com/users';
 
@@ -29,7 +29,7 @@ const renderUsers = usersArr => new Promise((resolve, reject) => {
     trContainer.appendChild(userWebsite);
     table.appendChild(trContainer);
   });
-	 resolve('OK');
+  resolve('OK');
 });
 
 const request = (method, url) => new Promise((resolve, reject) => {
@@ -42,21 +42,21 @@ const request = (method, url) => new Promise((resolve, reject) => {
       const data = JSON.parse(xhr.responseText);
       resolve(data);
     } else if (xhr.status === 404) {
-      showAlert('warning', 'task not found');
+      console.error('warning', 'task not found');
     } else if (xhr.status === 400) {
-      showAlert('error', JSON.parse(xhr.responseText).error);
+      console.error('error', JSON.parse(xhr.responseText).error);
     } else if (xhr.status === 500) {
-      showAlert('error', 'Server eror');
+      console.error('error', 'Server eror');
     }
   };
 
   xhr.onerror = () => console.error('error', 'Connection error');
- 	xhr.send();
+  xhr.send();
 });
 
 
 request('GET', URL_USERS)
- 	.then(data => renderUsers(data))
+  .then(data => renderUsers(data))
   .then(status => console.log(status))
   .catch(err => console.error(err));
 

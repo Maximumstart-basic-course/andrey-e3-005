@@ -9,7 +9,7 @@ const todo = {
     console.log(`Добавлен таск: { title: '${title}', description: '${desc}', dueDate: '${dueDate}'.}`);
   },
   getTasks(date) {
-    todo.dueDate.filter((el, i, arr) => {
+    todo.dueDate.filter((el, i) => {
       if (el === date) {
         console.log(`${el}, ${todo.description[i]}, ${todo.title[i]}`);
       } else {
