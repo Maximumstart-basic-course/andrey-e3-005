@@ -184,6 +184,46 @@
 			<p class="question">Как остановить "всплытие" на каком-то элементе? Почему это нужно делать с осторожностью?</p>
 			<p class="answer">event.stopImmediatePropagation(). При этом ламается весь лагорифм построения события. + не вызываются соседние события.</p>
 		</div>
+		<div class="pair api-p1">
+			<p class="question"></p>
+			<p class="answer"></p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question">Объясни принцип асинхронности.</p>
+			<p class="answer">Благодаря функции setTimeout() (как частный случай) данные обрабатываются асинхронно в API окружении, а потом поступают в движок js</p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question">Что такое API?</p>
+			<p class="answer">API — это готовый код для упрощения жизни программисту )).</p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question">Как работают и зачем нужны функции setTimeout() и setInterval()?</p>
+			<p class="answer">Функция setTimeout() переносит время выполнения действия на заданный срок, setInterval() задает интервал, через который действие будет постоянно выполняться. Нужны для того, чтобы действия выполнялись асинхронно.</p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question">Зачем нужен XHR?</p>
+			<p class="answer">XMLHttpRequest дает возможность делать HTTP-запросы к серверу без перезагрузки страницы.</p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question">Какие есть встроенные события у XHR? Что значат фазы события onreadystatechange? Когда срабатывает onerror? Как установить HTTP-заголовок в XHR?</p>
+			<p class="answer">onloadstart, onprogress, onabort, onerror, onload, ontimeout, onloadend, onreadystatechange. onerror срабатывает при возникновении ошибок сетевого уровня. Есть 5 фаз события onreadystatechange, "4" - запрос выполнен. setRequestHeader(name, value) устанавливает заголовок</p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question">Что такое CORS? Зачем нужен? Объясни принцип работы и сферу использования JSONP?</p>
+			<p class="answer">Механизм, использующий дополнительные HTTP-заголовки, чтобы дать возможность агенту пользователя получать разрешения на доступ к выбранным ресурсам с сервера. Нужен для кросс-сайтовых HTTP запросов. JSONP используется в более ранних версиях IE. Добавляет заголовки к HTTP запросам. </p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question">Как в JS можно работать с JSON? А с XML? Опиши встроенные методы.</p>
+			<p class="answer">JSON.parse и JSON.stringify встроенные методы, которые позволяют перевести JSON в объект и после этого работать с ним в JS и наоборот. Для XML есть метод parseFromString, который позволяет перевести XML в DOM документ и работать с ним с помощью DOM.методов.</p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question">Зачем используется конструкция try...catch...finally.</p>
+			<p class="answer">Если в блоке try произошла ошибка - она передается в блок catch для обработки.</p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question">Что такое callback hell? Какие есть способы борьбы с этим?</p>
+			<p class="answer"></p>
+		</div>
 	</div>
 	<script src="../seventh-homework/common.js"></script>
 </body>
