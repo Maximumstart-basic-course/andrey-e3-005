@@ -26,4 +26,4 @@ const request = () => {
 
 window.addEventListener('DOMContentLoaded', request);
 
-const interval = setInterval(request, 4000);
+setInterval(request, 4000);

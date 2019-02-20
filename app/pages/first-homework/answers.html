@@ -88,6 +88,86 @@
 			<p class="question">Для чего используется break? Почему в конструкции switch нужно использовать break для каждого case?</p>
 			<p class="answer">Break завершает последовательность операторов. Если совпало значение, программа будет выполняться до ближайшего break, если его нет, то выполнятся все значения</p>
 		</div>
+		<div class="pair functions">
+			<p class="question">Зачем нужны функции?</p>
+			<p class="answer">Функции нужни для применения одного и того же кода в разных частях программы</p>
+		</div>
+		<div class="pair functions">
+			<p class="question">Сколько параметров можно передать функции?</p>
+			<p class="answer">Бесконечное множество</p>
+		</div>
+		<div class="pair functions">
+			<p class="question">Что случится, если передать в функцию меньше параметров, чем нужно? А если больше? Объясни на примере функции add(a, b)</p>
+			<p class="answer">меньше или больше параметров высветит underfind</p>
+		</div>
+		<div class="pair functions">
+			<p class="question">Возможно ли для параметра указать значение по умолчанию? Назови два способа?</p>
+			<p class="answer">Возможно. 1. Если значение undefined то параметр равен "чему-то". 2. с поощью оператора || </p>
+		</div>
+		<div class="pair functions">
+			<p class="question">Что такое область видимости?</p>
+			<p class="answer">Часть контекста выполнения, в котором эта переменная существует. т.е. если объявить переменную внутри функции, ее видно только ниже по коду в этой функции.</p>
+		</div>
+		<div class="pair functions">
+			<p class="question">Чем отличается Function Declaration от Function Expression?</p>
+			<p class="answer">Function Declaration можно запустить функцию выше по коду и она будет видна.</p>
+		</div>
+		<div class="pair functions">
+			<p class="question">Что такое замыкание?</p>
+			<p class="answer">Изменение данных в переменной внешней функции внутренней функцией</p>
+		</div>
+		<div class="pair objects">
+			<p class="question">Что такое свойство объекта? Что такое метод объекта?</p>
+			<p class="answer">Свойство - набор данных, метод - функции в объекте</p>
+		</div>
+		<div class="pair objects">
+			<p class="question">Как можно добавить свойства или методы у объекта? Как можно удалить свойство или метод?</p>
+			<p class="answer">1. {ключ: значение}. 2. объект.ключ = "значение". Удаление - delete объект.свойство</p>
+		</div>
+		<div class="pair objects">
+			<p class="question">Как можно перебирать свойства объектов?</p>
+			<p class="answer">С помощью for in, forEach, for of</p>
+		</div>
+		<div class="pair objects">
+			<p class="question">Что такое прототипное наследование?</p>
+			<p class="answer">Наследование свойств одним объектом другого с помощью __proto__</p>
+		</div>
+		<div class="pair objects">
+			<p class="question">Как можно обратиться к свойству с именем my-SoMe-PROPERTY+name?</p>
+			<p class="answer"></p>
+		</div>
+		<div class="pair objects">
+			<p class="question">Объясни, что такое деструктуризация.</p>
+			<p class="answer">Изменение структуры объекта для облегчения доступа к его свойствам</p>
+		</div>
+		<div class="pair objects">
+			<p class="question">Объясни особенности каждой из коллекций: Map, Set, WeakMap, WeakSet</p>
+			<p class="answer">Map – коллекция для хранения записей вида ключ:значение. Set – коллекция для хранения множества значений. WeakSet – особый вид Set не препятствующий сборщику мусора удалять свои элементы. WeakMap для Map.</p>
+		</div>
+		<div class="pair arrays">
+			<p class="question">Что такое массив?</p>
+			<p class="answer">Массив - объект в котором ключ выступает числом от 0 ....</p>
+		</div>
+		<div class="pair arrays">
+			<p class="question">Чем массив отличается от объекта?</p>
+			<p class="answer">Методами добавления и удаления данных.</p>
+		</div>
+		<div class="pair arrays">
+			<p class="question">Что такое callback?</p>
+			<p class="answer">это функция, которая должна быть выполнена после того, как другая функция завершила выполнение</p>
+		</div>
+		<div class="pair arrays">
+			<p class="question">Чем отличаются методы Array.of и Array.from</p>
+			<p class="answer">Array.from принимает один аргумент и разбивает его на аргументы</p>
+		</div>
+		<div class="pair arrays">
+			<p class="question">Как можно узнать длину массива?</p>
+			<p class="answer">массив.length</p>
+		</div>
+		<div class="pair arrays">
+			<p class="question">Почему методы pop/push быстрее, чем shift/unshift?</p>
+			<p class="answer">С помощью pop/push не происходит переопределение номеров аргументов</p>
+		</div>
 		<div class="pair dom">
 			<p class="question">Что такое DOM?</p>
 			<p class="answer">Структурирование HTML докуминта в виде дерева объектов, которое можно изменять с помощью js</p>

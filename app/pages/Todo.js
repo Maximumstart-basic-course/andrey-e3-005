@@ -1,39 +1,44 @@
 const todo = {
-  title: [],
-  description: [],
-  dueDate: [],
+  tasks: [],
+
   addTask(title, desc, dueDate) {
-    todo.title.push(title);
-    todo.description.push(desc);
-    todo.dueDate.push(dueDate);
-    console.log(`Добавлен таск: { title: '${title}', description: '${desc}', dueDate: '${dueDate}'.}`);
+    const task = {
+      title,
+      description: desc,
+      dueDate,
+    };
+    this.tasks.push(task);
+    const i = todo.tasks.length - 1;
+    console.log('Добавлен таск: ', todo.tasks[i]);
   },
   getTasks(date) {
-    todo.dueDate.filter((el, i) => {
-      if (el === date) {
-        console.log(`${el}, ${todo.description[i]}, ${todo.title[i]}`);
-      } else {
-        console.log(`Тасков на '${date}' нет.`);
+    const taskArray = todo.tasks.filter((el) => {
+      if (el.dueDate == date) {
+        return el;
       }
     });
+    if (taskArray.length > 0) {
+      console.log(taskArray[0]);
+    } else {
+      console.log(`Тасков на '${date}' нет.`);
+    }
   },
   deleteTask(title) {
-    todo.title.find((el, i) => {
-      if (el === title) {
-        todo.title.splice(i, 1);
-        console.log('Таск удален.');
-      } else {
-        console.log(`Таск '${title}' не найден.`);
+    todo.tasks.find((el, i) => {
+      if (el.title == title) {
+        todo.tasks.splice(i, 1);
+        console.log('Таск удален');
+        return el;
       }
-    },
 
-    );
+      console.log(`Таск ${title} не найден`);
+    });
   },
-
 };
 
-const user = [{ name: 'Bruce', surname: 'Doe' }];
 
-console.log(user[0].name);
+// const user = [{ name: 'Bruce', surname: 'Doe' }];
 
-user[0].age = '41';
+// console.log(user[0].name);
+
+// user[0].age = '41';
