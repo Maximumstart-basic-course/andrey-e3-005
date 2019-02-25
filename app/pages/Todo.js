@@ -8,24 +8,23 @@ const todo = {
       dueDate,
     };
     this.tasks.push(task);
-    const i = todo.tasks.length - 1;
-    console.log('Добавлен таск: ', todo.tasks[i]);
+    console.log('Добавлен таск: ', task);
   },
   getTasks(date) {
     const taskArray = todo.tasks.filter((el) => {
-      if (el.dueDate == date) {
+      if (el.dueDate === date) {
         return el;
       }
     });
     if (taskArray.length > 0) {
-      console.log(taskArray[0]);
+      console.log(taskArray);
     } else {
       console.log(`Тасков на '${date}' нет.`);
     }
   },
   deleteTask(title) {
     todo.tasks.find((el, i) => {
-      if (el.title == title) {
+      if (el.title === title) {
         todo.tasks.splice(i, 1);
         console.log('Таск удален');
         return el;

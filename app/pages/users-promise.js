@@ -1,32 +1,27 @@
 const table = document.querySelector('.table-users');
-// const th = document.querySelector('.tr-head');
-// const errorDiv = document.querySelector('.error');
 
 const URL_USERS = 'https://jsonplaceholder.typicode.com/users';
 
 
 const renderUsers = usersArr => new Promise((resolve, reject) => {
   if (!usersArr || typeof (usersArr) !== 'object') reject('usersArr is not an array');
-
+  table.innerHTML = ` 
+    <tr>
+      <td>ID</td>
+      <td>Name</td>
+      <td>Phone</td>
+      <td>Username</td>
+      <td>Website</td>
+    </tr>`;
   usersArr.forEach((el) => {
-    const userId = document.createElement('td');
-    const userName = document.createElement('td');
-    const userPhone = document.createElement('td');
-    const userUsername = document.createElement('td');
-    const userWebsite = document.createElement('td');
-
-    userId.innerText = el.id;
-    userName.innerText = el.name;
-    userPhone.innerText = el.phone;
-    userUsername.innerText = el.username;
-    userWebsite.innerText = el.website;
-
     const trContainer = document.createElement('tr');
-    trContainer.appendChild(userId);
-    trContainer.appendChild(userName);
-    trContainer.appendChild(userPhone);
-    trContainer.appendChild(userUsername);
-    trContainer.appendChild(userWebsite);
+    trContainer.innerHTML = `
+      <td>${el.id}</td>
+      <td>${el.name}</td>
+      <td>${el.phone}</td>
+      <td>${el.username}</td>
+      <td>${el.website}</td>
+    `;
     table.appendChild(trContainer);
   });
   resolve('OK');
@@ -50,7 +45,7 @@ const request = (method, url) => new Promise((resolve, reject) => {
     }
   };
 
-  xhr.onerror = () => console.error('error', 'Connection error');
+  xhr.onerror = () => reject('Connection error');
   xhr.send();
 });
 
