@@ -15,6 +15,7 @@ const todo = {
       if (el.dueDate === date) {
         return el;
       }
+      return true;
     });
     if (taskArray.length > 0) {
       console.log(taskArray);
@@ -29,8 +30,8 @@ const todo = {
         console.log('Таск удален');
         return el;
       }
-
       console.log(`Таск ${title} не найден`);
+      return true;
     });
   },
 };
