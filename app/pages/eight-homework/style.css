@@ -1,0 +1,21 @@
+table {
+	border: 1px solid #c0c3c6;
+	font-family: sans-serif;
+	font-size: 18px;
+}
+
+.header-tr {
+	background-color: #20e55b;
+}
+
+.footer-tr {
+	background-color: transparent;
+}
+
+.date-js {
+	background-color: #e56820;
+}
+
+td {
+	padding: 5px;
+}

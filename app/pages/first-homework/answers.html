@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Answers</title>
+	<link rel="stylesheet" href="../seventh-homework/style.mini.css">
 </head>
 <body>
 	<div class="faq">
@@ -62,6 +63,248 @@
 			<p class="question">Какие преимущества дают обратные кавычки (`) при указании строки?</p>
 			<p class="answer">При использовании обратных кавычек сохраняется форматирование и можно использовать интерполяцию.</p>
 		</div>
+		<div class="pair loops">
+			<p class="question">Что такое "алгоритм"? Какие ты знаешь типы алгоритмов?</p>
+			<p class="answer">Набор инструкций, описывающих порядок действий для решения задачи. Линейные алгоритмы,
+с ветвлениями, с повторениями.</p>
+		</div>
+		<div class="pair loops">
+			<p class="question">Зачем нужны циклы? Какие виды циклов ты знаешь? В чем их основные отличия?</p>
+			<p class="answer">Для повторения различных действий много раз. While, Do...while, for. </p>
+		</div>
+		<div class="pair loops">
+			<p class="question">Что делают операторы ++i и i++ и в чем их отличие?</p>
+			<p class="answer">Прибавляют одну единицу, i++ начинает отсчет с заданной переменной</p>
+		</div>
+		<div class="pair loops">
+			<p class="question">Что такое "итерация"?</p>
+			<p class="answer">Повторное применение действия (цикл)</p>
+		</div>
+		<div class="pair loops">
+			<p class="question">Как называются и чем отличаются операторы || и &&?</p>
+			<p class="answer">|| оператор или (выполняется если одно из утверждений true), && оператор и (выполняется, если все утверждения true).</p>
+		</div>
+		<div class="pair loops">
+			<p class="question">Для чего используется break? Почему в конструкции switch нужно использовать break для каждого case?</p>
+			<p class="answer">Break завершает последовательность операторов. Если совпало значение, программа будет выполняться до ближайшего break, если его нет, то выполнятся все значения</p>
+		</div>
+		<div class="pair functions">
+			<p class="question">Зачем нужны функции?</p>
+			<p class="answer">Функции нужни для применения одного и того же кода в разных частях программы</p>
+		</div>
+		<div class="pair functions">
+			<p class="question">Сколько параметров можно передать функции?</p>
+			<p class="answer">Бесконечное множество</p>
+		</div>
+		<div class="pair functions">
+			<p class="question">Что случится, если передать в функцию меньше параметров, чем нужно? А если больше? Объясни на примере функции add(a, b)</p>
+			<p class="answer">меньше или больше параметров высветит underfind</p>
+		</div>
+		<div class="pair functions">
+			<p class="question">Возможно ли для параметра указать значение по умолчанию? Назови два способа?</p>
+			<p class="answer">Возможно. 1. Если значение undefined то параметр равен "чему-то". 2. с поощью оператора || </p>
+		</div>
+		<div class="pair functions">
+			<p class="question">Что такое область видимости?</p>
+			<p class="answer">Часть контекста выполнения, в котором эта переменная существует. т.е. если объявить переменную внутри функции, ее видно только ниже по коду в этой функции.</p>
+		</div>
+		<div class="pair functions">
+			<p class="question">Чем отличается Function Declaration от Function Expression?</p>
+			<p class="answer">Function Declaration можно запустить функцию выше по коду и она будет видна.</p>
+		</div>
+		<div class="pair functions">
+			<p class="question">Что такое замыкание?</p>
+			<p class="answer">Изменение данных в переменной внешней функции внутренней функцией</p>
+		</div>
+		<div class="pair objects">
+			<p class="question">Что такое свойство объекта? Что такое метод объекта?</p>
+			<p class="answer">Свойство - набор данных, метод - функции в объекте</p>
+		</div>
+		<div class="pair objects">
+			<p class="question">Как можно добавить свойства или методы у объекта? Как можно удалить свойство или метод?</p>
+			<p class="answer">1. {ключ: значение}. 2. объект.ключ = "значение". Удаление - delete объект.свойство</p>
+		</div>
+		<div class="pair objects">
+			<p class="question">Как можно перебирать свойства объектов?</p>
+			<p class="answer">С помощью for in, forEach, for of</p>
+		</div>
+		<div class="pair objects">
+			<p class="question">Что такое прототипное наследование?</p>
+			<p class="answer">Наследование свойств одним объектом другого с помощью __proto__</p>
+		</div>
+		<div class="pair objects">
+			<p class="question">Как можно обратиться к свойству с именем my-SoMe-PROPERTY+name?</p>
+			<p class="answer"></p>
+		</div>
+		<div class="pair objects">
+			<p class="question">Объясни, что такое деструктуризация.</p>
+			<p class="answer">Изменение структуры объекта для облегчения доступа к его свойствам</p>
+		</div>
+		<div class="pair objects">
+			<p class="question">Объясни особенности каждой из коллекций: Map, Set, WeakMap, WeakSet</p>
+			<p class="answer">Map – коллекция для хранения записей вида ключ:значение. Set – коллекция для хранения множества значений. WeakSet – особый вид Set не препятствующий сборщику мусора удалять свои элементы. WeakMap для Map.</p>
+		</div>
+		<div class="pair arrays">
+			<p class="question">Что такое массив?</p>
+			<p class="answer">Массив - объект в котором ключ выступает числом от 0 ....</p>
+		</div>
+		<div class="pair arrays">
+			<p class="question">Чем массив отличается от объекта?</p>
+			<p class="answer">Методами добавления и удаления данных.</p>
+		</div>
+		<div class="pair arrays">
+			<p class="question">Что такое callback?</p>
+			<p class="answer">это функция, которая должна быть выполнена после того, как другая функция завершила выполнение</p>
+		</div>
+		<div class="pair arrays">
+			<p class="question">Чем отличаются методы Array.of и Array.from</p>
+			<p class="answer">Array.from принимает один аргумент и разбивает его на аргументы</p>
+		</div>
+		<div class="pair arrays">
+			<p class="question">Как можно узнать длину массива?</p>
+			<p class="answer">массив.length</p>
+		</div>
+		<div class="pair arrays">
+			<p class="question">Почему методы pop/push быстрее, чем shift/unshift?</p>
+			<p class="answer">С помощью pop/push не происходит переопределение номеров аргументов</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Что такое DOM?</p>
+			<p class="answer">Структурирование HTML докуминта в виде дерева объектов, которое можно изменять с помощью js</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Что такое узел (нода)? Какие существуют ноды?</p>
+			<p class="answer">Структурная еденица дерева объектов. Основные - теги, текстовые - текст в них.</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Какие есть способы поиска элементов на странице?</p>
+			<p class="answer">Существуют старые методы по классу, тегу или идентификатору (document.getElementById, document.getElementsByClassName, document.getElementsByTagName) и document.querySelectorAll и document.querySelector, которые возвращают NodeList, и элемент соответственно.</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Что возвращает метод document.getElementById()? А метод document.querySelectorAll()?</p>
+			<p class="answer">Метод document.getElementById() возвращает элемент, document.querySelectorAll() возвращает NodeList.</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Как изменить стили элемента? Какая существует особенность с правилам, в названии которых есть дефис (border-radius, padding-left)? Какая особенность есть со свойством float? Можно ли задать элементу сразу несколько CSS-свойств?</p>
+			<p class="answer">Стиль можно изменить с помощью метода элемент.style.свойство = ''. Правила с дефисами пишутся через camelCase. Пишется элемент.style.cssFloat = ''. Можно задать одновременно несколько css-свойств через элемент.style.cssText = ''.</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Чем отличается HTMLCollection / NodeList от массива?</p>
+			<p class="answer">В HTMLCollection нельзя использовать метод перебора forEach.</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Как обратиться к родителю элемента? А к потомку?</p>
+			<p class="answer">Node.parentElement ‒ родитель, Node.children, Node.clildNodes (с текстом), Node.firstChild, Node.lastChild</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Зачем нужны data-* атрибуты? И как получить доступ к значению такого атрибута?</p>
+			<p class="answer">Для хранения дополнительной информации, element.getAttribute('') или element.dataset.__</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Опиши, какие методы и свойства используются для работы с классами?</p>
+			<p class="answer">element.classList.add(), element.classList.remove(), element.classList.toggle(), element.classList.contains, element.classList.item(Number), element.classList.length</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Какие методы создают новый элемент, текстовую ноду? А какие удаляют?</p>
+			<p class="answer">document.createElement или document.createTextNode. element.innerHTML = ''; (узел куда добавляют).appendChild(элемент). узел.removeChild(элемент); элемент.remove(); </p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Как работает метод Element.matches()</p>
+			<p class="answer">Возвращает true or false если находи нужный, нужен при переборе.</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Зачем нужна библиотека Modernizr?</p>
+			<p class="answer">Для поддержки новых функций в различных браузерах старыми браузерами.</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Зачем нужна библиотека jQuery?</p>
+			<p class="answer">Многофункциональная библиотека, которая нужна для работы с документами HTML, обработки событий, анимации</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Чем отличаются Node.appendChild(), Node.insertBefore() и Element.insertAdjacentHTML()?</p>
+			<p class="answer">Это методы вставки элемента в структуру HTML, позволяют вставить элементы в разные места.</p>
+		</div>
+		<div class="pair dom">
+			<p class="question">Что находится в свойстве Element.innerHTML? А Element.outerHTML? Ответь, чем отличаются два следующих типа вставки:</p>
+			<p class="answer"></p>
+		</div>
+		<div class="pair events">
+			<p class="question">Что такое событие? Какие бывают события?</p>
+			<p class="answer">Сигнал от браузера о происшествии чего-либо. События мыши, клавиатуры, элементов управления, события документа</p>
+		</div>
+		<div class="pair events">
+			<p class="question">Как можно привязывать обработчики к событию? Какие есть недостатки у разных способов привязки к событиям?</p>
+			<p class="answer">1. С помощью HTML-атрибутов (недостаток: смешивание HTML и js). 2. Обращение к свойствам элемента(можно привязать только один обработчик). 3. addEventListener</p>
+		</div>
+		<div class="pair events">
+			<p class="question">Что такое "делегирование"? В чем преимущество использования делегирования?</p>
+			<p class="answer">Назначение общему предку элементов событий, которые нужно обрабатывать похожим образом. ускоряет работу системы.</p>
+		</div>
+		<div class="pair events">
+			<p class="question">Как удалить обработчик события?</p>
+			<p class="answer">removeEventListener('событие', функция колбэка).</p>
+		</div>
+		<div class="pair events">
+			<p class="question">Чему равен this в функции-обработчике события? Какая есть особенность у стрелочных функций и this?</p>
+			<p class="answer">this обращается к window.</p>
+		</div>
+		<div class="pair events">
+			<p class="question">Что такое "захват" и "всплытие". Какую роль они играют?</p>
+			<p class="answer"> "Захват" - после происшествия события информация спускается от корневого элемента к нужному. "Всплытие" - информация возвращается от нужного элемента к корневого. Во время этих действий запускаются события на пути между корневым и нужным элементом.</p>
+		</div>
+		<div class="pair events">
+			<p class="question">Что такое объект Event? Какую информацию он хранит?</p>
+			<p class="answer"> Координаты курсора, введённый символ и другие, в зависимости от события.</p>
+		</div>
+		<div class="pair events">
+			<p class="question">Как отменить событие по умолчанию?</p>
+			<p class="answer">С помощью preventDefault</p>
+		</div>
+		<div class="pair events">
+			<p class="question">Как остановить "всплытие" на каком-то элементе? Почему это нужно делать с осторожностью?</p>
+			<p class="answer">event.stopImmediatePropagation(). При этом ламается весь лагорифм построения события. + не вызываются соседние события.</p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question"></p>
+			<p class="answer"></p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question">Объясни принцип асинхронности.</p>
+			<p class="answer">Благодаря функции setTimeout() (как частный случай) данные обрабатываются асинхронно в API окружении, а потом поступают в движок js</p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question">Что такое API?</p>
+			<p class="answer">API — это готовый код для упрощения жизни программисту )).</p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question">Как работают и зачем нужны функции setTimeout() и setInterval()?</p>
+			<p class="answer">Функция setTimeout() переносит время выполнения действия на заданный срок, setInterval() задает интервал, через который действие будет постоянно выполняться. Нужны для того, чтобы действия выполнялись асинхронно.</p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question">Зачем нужен XHR?</p>
+			<p class="answer">XMLHttpRequest дает возможность делать HTTP-запросы к серверу без перезагрузки страницы.</p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question">Какие есть встроенные события у XHR? Что значат фазы события onreadystatechange? Когда срабатывает onerror? Как установить HTTP-заголовок в XHR?</p>
+			<p class="answer">onloadstart, onprogress, onabort, onerror, onload, ontimeout, onloadend, onreadystatechange. onerror срабатывает при возникновении ошибок сетевого уровня. Есть 5 фаз события onreadystatechange, "4" - запрос выполнен. setRequestHeader(name, value) устанавливает заголовок</p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question">Что такое CORS? Зачем нужен? Объясни принцип работы и сферу использования JSONP?</p>
+			<p class="answer">Механизм, использующий дополнительные HTTP-заголовки, чтобы дать возможность агенту пользователя получать разрешения на доступ к выбранным ресурсам с сервера. Нужен для кросс-сайтовых HTTP запросов. JSONP используется в более ранних версиях IE. Добавляет заголовки к HTTP запросам. </p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question">Как в JS можно работать с JSON? А с XML? Опиши встроенные методы.</p>
+			<p class="answer">JSON.parse и JSON.stringify встроенные методы, которые позволяют перевести JSON в объект и после этого работать с ним в JS и наоборот. Для XML есть метод parseFromString, который позволяет перевести XML в DOM документ и работать с ним с помощью DOM.методов.</p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question">Зачем используется конструкция try...catch...finally.</p>
+			<p class="answer">Если в блоке try произошла ошибка - она передается в блок catch для обработки.</p>
+		</div>
+		<div class="pair api-p1">
+			<p class="question">Что такое callback hell? Какие есть способы борьбы с этим?</p>
+			<p class="answer"></p>
+		</div>
 	</div>
+	<script src="../seventh-homework/common.js"></script>
 </body>
 </html>

@@ -12,10 +12,10 @@
     E: 2.718281828459045,
     PI: 3.14159265359,
     pow(x, n) {
-      if (isNaN(x)) {
+      if (isNaN(x) || isNaN(n)) {
         console.log('Введите 2 числа');
-      } else if (isNaN(n)) {
-        console.log('Введите 2 числа');
+      } else if (x === '' || n === '') {
+        console.log('Введите числа');
       } else {
         return x ** n;
       }
